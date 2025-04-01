@@ -3,48 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Reynur Shaban | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 <header>
-    <h1>My Portfolio</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1 class="logo">RS</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <img src="images/image1.png" alt="Reynur Shaban" class="profile-pic">
-    <p>I'm a computer science student with a passion for web development and design.</p>
+<section id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Hi, I'm <span>Reynur Shaban</span></h2>
+                <p>Computer Science Student & Web Developer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/image2.png" alt="Reynur Shaban" class="profile-pic">
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Project 1</h3>
-        <p><a href="https://rey661.github.io/task-manager/" >Task Manager</a></p>
-    </div>
-    <div class="project">
-        <h3>Project 2</h3>
-        <p>Description of your project.</p>
+<section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>I'm a passionate computer science student with experience in web development and design. I enjoy building practical applications and solving problems through code.</p>
+            <div class="about-details">
+                <div class="detail-item">
+                    <i class="fas fa-university"></i>
+                    <p>Computer Science Student</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-code"></i>
+                    <p>1 Year Internship as a Computer Repair Technician Hardware and Software</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: reynurali661@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/rey661" target="_blank">rey661</a></p>
+<section id="skills" class="container">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Backend</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <ul>
+                <li>Git</li>
+                <li>Photoshop</li>
+                <li>Autodesk Maya</li>
+                <li>Microsoft Office</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="container">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/task_manager.png" alt="Task Manager">
+            </div>
+            <div class="project-info">
+                <h3>Task Manager</h3>
+                <p>A web app that helps users manage tasks efficiently with drag-and-drop functionality.</p>
+                <div class="project-links">
+                    <a href="https://rey661.github.io/task-manager/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/rey661/task-manager/blob/master/index.html" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/snake.png" alt="Neon Snake Game">
+            </div>
+            <div class="project-info">
+                <h3>Neon Snake Game</h3>
+                <p>Classical Snake game with a neon tone.</p>
+                <div class="project-links">
+                    <a href="https://rey661.github.io/snake/" target="_blank">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:reynurali661@gmail.com">reynurali661@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/rey661" target="_blank">github.com/rey661</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/reynur-shaban-498218358/" target="_blank">www.linkedin.com/in/reynur-shaban</a>
+        </div>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Reynur Shaban</p>
+    <div class="container">
+        <p>&copy; 2025 Reynur Shaban. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/rey661" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/reynur-shaban-498218358/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
